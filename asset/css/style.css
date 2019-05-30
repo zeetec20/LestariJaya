@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+/* font-family: 'Arvo', serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+/* font-family: 'Bree Serif', serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+
+}
+body{
+    background-color: #eeeeee;
+}
+
+.navbarTop{
+    width: 100%;
+    height: 10%;
+    background-color: #222a31;
+}
+
+.navbarTop .judulWebsite{
+    color: #eeeeee;
+    size: 15px;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    padding: 2.5px;
+    margin-left: 10px;
+}
+
+.searchBar{
+    position: absolute;
+    top: 2.4%;
+    right: 1%;
+}
+
+.btn-outline-success {
+    color: #45aeb5;
+    border-color: #45aeb5;
+}
+  
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #45aeb5;
+    border-color: #45aeb5;
+}
+  
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.inputSearch{
+    background-color: #eeeeee;
+}
+
+.navbarLeft{
+    width: 10%;
+    height: 90%;
+    background-color: #393e46;
+}
+
+.navbarLeft ul li{
+    padding-top: 20%;
+}
+
+.navbarLeft .iconHome img,
+.navbarLeft .iconFertilizer img,
+.navbarLeft .iconNote img,
+.navbarLeft .iconSetting img{
+    margin: 19%;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 60%;
+}
+
+.navbarLeft .iconFertilizer img{
+    width: 55%;
+    margin: 22%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbarLeft .textHome h1,
+.navbarLeft .textFertilizer h1,
+.navbarLeft .textNote h1,
+.navbarLeft .textSetting h1{
+    font-size: 20px;
+    color: #eeeeee;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.body{
+    position: absolute;
+    top: 11%;
+    left: 10.5%;
+    width: 89%;
+    height: 88%;
+    background-color: #45aeb5;
+    z-index: 0;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.contentHome{
+    z-index: 4;
+}
+
+.contentFertilizer{
+    z-index: 3;
+}
+
+.contentNote{
+    z-index: 2;
+}
+
+.contentSetting{
+    z-index: 1;
+}
