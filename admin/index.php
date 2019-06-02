@@ -1,5 +1,6 @@
 <?php
 include("asset/php/connection.php");
+include("asset/php/session.php");
 include("asset/php/result.php");
 include("asset/php/function.php");
 ?>
