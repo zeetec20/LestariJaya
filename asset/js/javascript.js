@@ -47,29 +47,29 @@ function showResult(params) {
     var valueShortBy = document.getElementById("shortBy").value;
     if (valueShortBy == 1) {
         document.getElementById("table1").style.zIndex = "4";
-    document.getElementById("table2").style.zIndex = "3";
-    document.getElementById("table3").style.zIndex = "2";
-    document.getElementById("table4").style.zIndex = "1";
+        document.getElementById("table2").style.zIndex = "3";
+        document.getElementById("table3").style.zIndex = "2";
+        document.getElementById("table4").style.zIndex = "1";
     }
     if (valueShortBy == 2) {
         document.getElementById("table1").style.zIndex = "4";
-    document.getElementById("table2").style.zIndex = "3";
-    document.getElementById("table3").style.zIndex = "2";
-    document.getElementById("table4").style.zIndex = "1";
+        document.getElementById("table2").style.zIndex = "3";
+        document.getElementById("table3").style.zIndex = "2";
+        document.getElementById("table4").style.zIndex = "1";
         document.getElementById("table2").style.zIndex = "5";
     }
     if (valueShortBy == 3) {
         document.getElementById("table1").style.zIndex = "4";
-    document.getElementById("table2").style.zIndex = "3";
-    document.getElementById("table3").style.zIndex = "2";
-    document.getElementById("table4").style.zIndex = "1";
+        document.getElementById("table2").style.zIndex = "3";
+        document.getElementById("table3").style.zIndex = "2";
+        document.getElementById("table4").style.zIndex = "1";
         document.getElementById("table3").style.zIndex = "5";
     }
     if (valueShortBy == 4) {
         document.getElementById("table1").style.zIndex = "4";
-    document.getElementById("table2").style.zIndex = "3";
-    document.getElementById("table3").style.zIndex = "2";
-    document.getElementById("table4").style.zIndex = "1";
+        document.getElementById("table2").style.zIndex = "3";
+        document.getElementById("table3").style.zIndex = "2";
+        document.getElementById("table4").style.zIndex = "1";
         document.getElementById("table4").style.zIndex = "5";
     }
 }

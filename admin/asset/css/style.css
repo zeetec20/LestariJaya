@@ -14,7 +14,7 @@ html, body{
 
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 
 .navbarTop{
@@ -35,7 +35,7 @@ body{
 .searchBar{
     position: absolute;
     top: 2.4%;
-    right: 1%;
+    right: 10%;
 }
 
 .btn-outline-success {

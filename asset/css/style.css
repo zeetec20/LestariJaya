@@ -35,7 +35,7 @@ body{
 .searchBar{
     position: absolute;
     top: 2.4%;
-    right: 1%;
+    right: 10%;
 }
 
 .btn-outline-success {
@@ -57,6 +57,32 @@ body{
 
 .inputSearch{
     background-color: #eeeeee;
+}
+
+.navbarTop .buttonLogin{
+    position: absolute;
+    top: 0;
+    right: 1.8%;
+    border-left: solid #eeeeee 5px;
+    margin: 0.6%;
+    height: 7.5%;
+    cursor: pointer;
+}
+
+.navbarTop .buttonLogin h1{
+    transition: 0.5s;
+    color: #222a31;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 6%;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: #45aeb5 1px;
+}
+
+.navbarTop .buttonLogin h1:hover{
+    transition: 0.5s;
+    color: #45aeb5;
 }
 
 .navbarLeft{
@@ -180,7 +206,7 @@ body{
     height: 80%;
     top: 5%;
     right: 30%;
-    background-color: #54bbc2;
+    background-color: #54bbc2de;
     border-radius: 2%;
     border: solid #222a31 2px;
     z-index: 7;
@@ -223,7 +249,7 @@ body{
 }
 
 .buttonLogin button{
-    color: #393e46;
+    color: #222a31;
     border-color: #222a31;
     margin-top: 10%;
     font-weight: bold;

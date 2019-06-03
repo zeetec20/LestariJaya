@@ -1,7 +1,9 @@
 <?php
+session_start();
 include("asset/php/connection.php");
 include("asset/php/result.php");
 include("asset/php/function.php");
+include("asset/php/login.php");
 ?>
 
 <!-- symbol ✘ ✔ -->
@@ -31,6 +33,10 @@ include("asset/php/function.php");
             <input class="form-control form-control-sm mr-sm-2 inputSearch" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+        
+        <div class="buttonLogin">
+            <h1 class="textButtonLogin" onclick="showLoginPage()">Login</h1>
+        </div>
     </div>
 
     <div class="navbarLeft">
@@ -83,24 +89,24 @@ include("asset/php/function.php");
         <div class="loginPage content" id="loginPage">
             <h1 class="nameLoginPage nameContent">Login</h1>
 
-            <form action="">
+            <form action="" method="post">
                 <div class="form-group row formLogin">
                     <label for="inputEmail3" class="col-sm-2 col-form-label labelUsername">Username</label>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control inputUsername" id="inputEmail3" placeholder="Username">
+                        <input type="text" class="form-control inputUsername" id="inputUser" placeholder="Username" name="username">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label labelPassword">Password</label>
                     <div class="col-sm-6">
-                        <input type="password" class="form-control inputPassword" id="inputPassword3" placeholder="Password">
+                        <input type="password" class="form-control inputPassword" id="inputPassword" placeholder="Password" name="password">
                     </div>
                 </div>
 
                 <div class="buttonLogin">
                     <button type="reset" class="btn btn-outline-success button1" onclick="closeLoginPage()">Cancel</button>
-                    <button type="submit" class="btn btn-outline-success button2">Submit</button>
+                    <button type="submit" class="btn btn-outline-success button2" name="submit">Submit</button>
                 </div>
             </form>
 
