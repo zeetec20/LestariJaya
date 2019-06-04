@@ -36,13 +36,6 @@ function closeLoginPage(params) {
     document.getElementById("loginPage").style.display = "none";
 }
 
-function defaultTable(params) {
-    document.getElementById("table1").style.zIndex = "4";
-    document.getElementById("table2").style.zIndex = "3";
-    document.getElementById("table3").style.zIndex = "2";
-    document.getElementById("table4").style.zIndex = "1";
-}
-
 function showResult(params) {
     var valueShortBy = document.getElementById("shortBy").value;
     if (valueShortBy == 1) {
@@ -74,3 +67,17 @@ function showResult(params) {
     }
 }
 
+function imgUserClick(params) {
+    var topPageIconUser = document.getElementById("pageIconUser");
+
+    if (topPageIconUser.style.top === "7.9%") {
+        topPageIconUser.style.top = "-100%";
+    }
+    else {
+        topPageIconUser.style.top = "7.9%";
+    }
+}
+
+function imgUserOut(params) {
+    
+}

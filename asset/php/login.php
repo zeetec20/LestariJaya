@@ -8,7 +8,8 @@ if( isset($_POST["submit"]) ) {
 		// cek password
 		$row = mysqli_fetch_assoc($result);
 		if( password_verify($password, $row["password"]) ) {
-            $_SESSION["login"] = true;
+			$_SESSION["login"] = true;
+			$_SESSION["nameUser"] = $username;
             header("Location: admin");
 			exit;
 		}

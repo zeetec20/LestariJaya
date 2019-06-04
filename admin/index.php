@@ -4,6 +4,7 @@ include("asset/php/connection.php");
 include("asset/php/session.php");
 include("asset/php/result.php");
 include("asset/php/function.php");
+include("asset/php/logout.php");
 ?>
 
 <!-- symbol ✘ ✔ -->
@@ -33,6 +34,17 @@ include("asset/php/function.php");
             <input class="form-control form-control-sm mr-sm-2 inputSearch" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-sm btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
+
+        <div class="iconUser">
+            <img src="asset/img/user.svg" alt="" onclick="imgUserClick()">
+        </div>
+
+        <div class="pageIconUser" id="pageIconUser">
+            <h1><?= $_SESSION["nameUser"]; ?></h1>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-sm btn-outline-succes" name="logout">Log Out</button>
+            </form>
+        </div>
     </div>
 
     <div class="navbarLeft">
@@ -219,14 +231,11 @@ include("asset/php/function.php");
 
             </div>
 
-            <button class="btn btn-sm btn-outline-success lihatHarga" id="lihatHarga" onclick="showLoginPage()">Lihat Harga</button>
-
             <div class="input-group input-group-sm urutanList">
                 <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01">Short by</label>
                 </div>
                 <select class="custom-select" id="shortBy" onchange="showResult();">
-                    <option selected>Choose...</option>
                     <option value="1">Name A-Z</option>
                     <option value="2">Name Z-A</option>
                     <option value="3">Price 0-100</option>

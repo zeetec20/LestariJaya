@@ -1,6 +1,7 @@
 <?php
 session_start();
 include("asset/php/connection.php");
+include("asset/php/session.php");
 include("asset/php/result.php");
 include("asset/php/function.php");
 include("asset/php/login.php");
@@ -230,7 +231,6 @@ include("asset/php/login.php");
                     <label class="input-group-text" for="inputGroupSelect01">Short by</label>
                 </div>
                 <select class="custom-select" id="shortBy" onchange="showResult();">
-                    <option selected>Choose...</option>
                     <option value="1">Name A-Z</option>
                     <option value="2">Name Z-A</option>
                     <option value="3">Price 0-100</option>

@@ -372,6 +372,7 @@ body{
 
 .contentFertilizer .hargaObatMenu,
 .contentFertilizer .hargaObat h2{
+    visibility: hidden;
 }
 
 .obat{
